@@ -1,0 +1,47 @@
+h4{
+	
+    display: -webkit-inline-box;
+    padding-left: 5%;
+}
+
+nav .nav-wrapper{
+	padding: 0% 5%;
+
+}
+
+
+.col-3{
+	width: 100%;
+	height: 25%;
+}
+h6{
+	margin-left: 5%;
+	margin-top: 10%;
+}
+
+
+form{
+	width: 80%;
+    margin: 10% 0% 10% 10%;
+}
+
+.switch{
+	margin: 10% 25%;
+   
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #c62828;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #c62828;
+  }
+
+input[type=range]+.thumb {
+	border-color:  #c62828;
+}
+
+input[type=range]+.thumb {
+	background-color:#c62828;
+}

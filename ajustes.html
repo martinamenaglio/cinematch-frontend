@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--estilos propios-->
+        <link rel="stylesheet" type="text/css" href="css/estiloscomunes.css">
+        <link rel="stylesheet" type="text/css" href="css/ajustes.css">
+
+
+        <!--custom fonts-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!--noUiSlider-->
+        <link href="css/nouislider.min.css" rel="stylesheet">
+
+        
+    </head>
+    <body>
+       
+
+
+        <!--Barra de ajustes-->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#"><i class="fa fa-arrow-left fa-2x" aria-hidden="true" ></i></a>
+                <h4>Ajustes</h4>
+            </div>  
+           
+        </nav>
+
+        <!--switch-->
+        <div class="col-3">
+            <h6>Muestrame</h6>
+            
+            <div class="switch">
+                <label>
+                  Hombres
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  
+                </label>
+            </div>
+
+            
+            <div class="switch">
+                <label>
+                  Mujeres
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  
+                </label>
+            </div>
+        </div>
+
+        <!--rango-->
+        <div class="col-3">
+            <h6>Rango de busqueda</h6>
+
+            <form action="#">
+                <p class="range-field">
+                  <input type="range" id="test5" min="0" max="100" />
+                </p>
+            </form>
+        
+        </div>
+ 
+        <!--rango noUiSlider-->
+        <div class="col-3">
+            <h6>Mostrar edades</h6>
+
+            <form action="#" >
+                <p class="range-field">
+                  <input type="range" id="rangoedad" min="18" max="100" />
+                </p>
+            </form>
+        
+        </div>
+         <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+
+        <!--noUiSlider-->
+        <script src="js/nouislider.min.js"></script>
+       <!-- <script src="js/nouislider.js"></script>
+        <script src="js/nouisliderrange.js"></script>-->
+
+        <!--mporting the CDNJS for wNumb-->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.0.4/wNumb.min.js'></script>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/9.0.0/nouislider.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.0.4/wNumb.min.js'></script>
+        
+    </body>
+</html>

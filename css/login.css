@@ -1,0 +1,28 @@
+
+#login-page {
+    background-image: url("../img/fondologin.jpg");
+}
+
+h3{
+	color:white;
+
+}
+
+
+.logo{
+	width: 100%;
+	margin-bottom: 80%;
+	margin-top: 20%;
+}
+
+
+.btn{
+	background-color:#b71c1c ;
+	margin: 0% 10% 0 10%;
+	font-size: 75%;
+
+}
+
+.btn:hover{
+	background-color: #c62828;
+}

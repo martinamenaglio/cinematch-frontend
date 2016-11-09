@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+        <meta charset="UTF-8">
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <!--Let browser know website is optimized for mobile-->
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+
+        <!--Import Google Icon Font-->
+      	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+         <!--custom fonts-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+      	<!--Import materialize.css-->
+      	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+
+         <!--Importo estilo jtinder-->
+        <link rel="stylesheet" type="text/css" href="css/jTinder.css">
+        
+    		<!--Importo estilos propios-->
+    		<link rel="stylesheet" type="text/css" href="css/combo.css">
+        <link rel="stylesheet" type="text/css" href="css/estiloscomunes.css">
+        <link rel="stylesheet" type="text/css" href="css/admperfil.css">
+        
+
+
+       
+        
+        
+  </head>
+
+  <body>
+
+
+         <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+
+         <!--Importo Apache Cordova-->
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+        <script type="text/javascript" src="js/index.js"></script>
+
+        
+        <!--jtinder-->
+        <script type="text/javascript">
+            $("#tinderslide").jTinder('like');
+            $("#tinderslide").jTinder('dislike');
+        </script>
+      
+
+        
+
+
+        <!--Barra de navegacion-->
+
+        <nav>
+          <div class="nav-wrapper">
+            <ul id="nav-mobile">
+              <li><a href="chat.html"></a><i class="fa fa-commenting fa-3x"></i></li>
+              <li><a href="combo.html"></a><img src="img/pochocloblanco.png"></li>
+              <li><a href="admperfil.html"></a><i class="fa fa-user fa-3x"></i></li>
+            </ul>
+          </div>
+        </nav>
+
+
+        <div id="tinderslide">
+            <ul>
+                <li class="pane1">
+                   <div class="img-perfil">
+                     <!--<img class="perfil" src="img/fotoperfil.jpg">-->
+                   </div>
+                     <span class="nombre">Miqueas,25</span>
+                     <div class="descripcion">
+                      <p>lalalalalallalalallalalalalal</p>
+                     </div>
+                   
+                   <div class="dislike"></div>
+                   <div class="like"></div>                 
+                </li>
+
+                <!--<li>
+                  <div>
+                     <img src="img/fotoperfil.jpg">
+                     <span class="nombre">Miqueas,25</span>
+                     <div class="descripcion">
+                      <p>lalalalalallalalallalalalalal</p>
+                     </div>
+                     
+                   </div>
+                  
+                </li>-->
+                
+            </ul>
+        </div>
+<!--
+        <div class="actions">
+          <a href="#" class="dislike"><i></i></a>
+          <a href="#" class="like"><i></i></a>
+        </div>
+        -->
+         <!--botones-->
+          <div class="row">
+          
+          <div class="col s6">
+            <a href="#" class="btn-floating btn-large waves-effect waves-light dislike "><i class="fa fa-times fa-5x"></i></a>
+          </div>
+
+
+          <div class="col s6">
+            <a  href="#" class="btn-floating btn-large waves-effect waves-light like "><img class="boton-pochoclo" src="img/pochocloblanco.png"></a>
+          </div>
+    
+          
+        </div>
+        
+
+        <!-- JTINDER -->
+        <!-- jQuery lib -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+
+        <!-- transform2d lib -->
+        <script type="text/javascript" src="js/jquery.transform2d.js"></script>
+
+        <!-- jTinder lib -->
+        <script type="text/javascript" src="js/jquery.jTinder.js"></script>
+
+        <script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+        <!-- jTinder initialization script -->
+        <script>$("#tinderslide").jTinder();</script>
+
+        
+  </body>
+</html>

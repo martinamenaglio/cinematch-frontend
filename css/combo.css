@@ -1,0 +1,103 @@
+
+
+/*.col-2 a img{
+	width: 60%;
+	margin: 20%;
+}
+
+.col-2 .btn{
+	border-radius: 20px;
+	width: 90%;
+
+}*/
+
+#tinderslide{
+	position: relative;
+    background: #fff;
+	width: 90%;
+	height: 400px;
+	margin: 5%;
+}
+
+#tinderslide li {
+	background: #fff;
+	}
+
+.img-perfil{
+	height: 80%;
+}
+
+.perfil{
+	width: 90%;
+	height:70%;
+}
+
+.nombre{
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    padding: 20px;
+}
+
+.descripcion{
+    border-radius: 0 0 2px 2px;
+    max-height: 70px;
+    display: -webkit-box;
+}
+
+p{
+	font-size: medium;
+}
+
+/*.fila {
+	margin: 0px;
+	width: 100%;
+	display: -webkit-inline-box;
+}
+
+.col-2{
+	width: 50%;
+}
+*/
+.btn-floating.btn-large {
+	background-color:#b71c1c;
+	margin:0% 30%; 
+}
+
+.btn-floating.btn-large {
+    width: 90px;
+    height: 90px;
+    margin: 0% 10% 0% 25%;
+}
+
+/*
+.card.medium {
+    margin: 0% 10% 0% 5%;
+}
+*/
+
+.btn-large i {
+    font-size: 4rem;
+}
+
+.btn-floating.btn-large i {
+    line-height: 80px;
+}
+
+/*
+.carousel.carousel-slider {
+    height: 400px;
+}   
+*/
+.boton-pochoclo{
+	width: 70%;
+	padding: 20% 5% 0% 5%;
+}
+/*
+.tamano{
+	height: 60%;
+}
+*/

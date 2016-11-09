@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+        <meta charset="UTF-8">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <!--Let browser know website is optimized for mobile-->
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+
+        
+
+        <!--Import Google Icon Font-->
+      	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      	<!--Import materialize.css-->
+      	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    		<!--Importo estilos propios-->
+    		<link rel="stylesheet" type="text/css" href="css/estiloscomunes.css">
+        <link rel="stylesheet" type="text/css" href="css/seleccionpeliculas.css">
+
+
+        <title>Cinematch</title>
+        </head>
+        <body>
+         <!--Import jQuery before materialize.js-->
+         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+         <script type="text/javascript" src="js/materialize.min.js"></script>
+
+         <!--Importo Apache Cordova-->
+        
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <!--Importo handlebars-->
+        <!--<script src="js/handlebars-v4.0.5.js"></script>-->
+
+        <!--Importo peliculas.js-->
+        <!--<script src="js/peliculas.js"></script>
+
+        -->
+
+        <!--Javascript para carousel-->
+        <script type="text/javascript">
+           $(document).ready(function(){
+            $('.carousel').carousel();
+          });
+        </script>
+
+        <script type="text/javascript">
+           // Next slide
+          $('.carousel').carousel('next');
+          $('.carousel').carousel('next', 3); // Move next n times.
+          // Previous slide
+          $('.carousel').carousel('prev');
+          $('.carousel').carousel('prev', 4); // Move prev n times.
+          // Set to nth slide
+          $('.carousel').carousel('set', 4);
+        </script>
+
+        <!--jquery plugin initialization modal-->
+        <script type="text/javascript">
+          $(document).ready(function(){
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal();
+          });
+        </script>
+
+        <!--This is our template. -->
+        <!--Data will be inserted in its according place, replacing the brackets.-->
+        <!--<script id="peliculas-template" type="text/x-handlebars-template">
+          
+          <div class="content-placeholder">
+             <div class="carousel peliculas">
+              <a class="carousel-item" href="#one!"><img src={{link}}></a>
+              <a class="carousel-item" href="#two!"><img src="./img/1.jpeg"></a>
+              <a class="carousel-item" href="#three!"><img src="./img/3.jpeg"></a>
+              <a class="carousel-item" href="#four!"><img src="./img/m2.jpeg"></a>
+              <a class="carousel-item" href="#five!"><img src="./img/4.jpeg"></a>
+            </div> 
+          </div>  
+
+         </script>
+         -->
+
+          <div class="carousel peliculas">
+              <a class="carousel-item" href="#one!"><img src="./img/index.jpeg"></a>
+              <a class="carousel-item" href="#two!"><img src="./img/1.jpeg"></a>
+              <a class="carousel-item" href="#three!"><img src="./img/3.jpeg"></a>
+              <a class="carousel-item" href="#four!"><img src="./img/m2.jpeg"></a>
+              <a class="carousel-item" href="#five!"><img src="./img/4.jpeg"></a>
+          </div> 
+
+
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" class="center-align" href="#modal1">Ya Termine</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <p>Debe seleccionar al menos una pelicula.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+          </div>
+        </div>
+       
+    </body>
+</html>
+
+

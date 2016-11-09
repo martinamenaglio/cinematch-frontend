@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <!--Let browser know website is optimized for mobile-->
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+
+        
+
+        <!--Import Google Icon Font-->
+      	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <!--custom fonts-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+      	<!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.4.5.css"  media="screen,projection"/>
+      	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    		<!--Importo estilos propios-->
+        <link rel="stylesheet" type="text/css" href="css/combo.css">
+        <link rel="stylesheet" type="text/css" href="css/admperfil.css">
+    		<link rel="stylesheet" type="text/css" href="css/login.css">
+        <link rel="stylesheet" type="text/css" href="css/seleccionpeliculas.css">
+        <link rel="stylesheet" type="text/css" href="css/jTinder.css">
+        <link rel="stylesheet" type="text/css" href="css/ajustes.css">
+        <link rel="stylesheet" type="text/css" href="css/estiloscomunes.css">
+        <link href="css/nouislider.min.css" rel="stylesheet" type="text/css">
+
+        <!--Importo Apache Cordova-->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+
+        <!--Import jQuery before materialize.js-->
+        
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+        <!-- Sacar css de Jquery mobile -->
+        <script>
+        $(document).on("mobileinit", function () {
+            $.mobile.ignoreContentEnabled=true;
+        })
+        </script>
+
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+
+        <title>Cinematch</title>
+        <style type="text/css">
+</style>
+  </head>
+  <body>
+
+    <!--PANTALLA LOGIN-->
+    <div data-role="page" id="login-page" data-enhance="false">
+      <div data-role="main"  class="ui-content #d32f2f">
+        <img src="./img/logo3.png" class="center-align logo">
+
+        <button data-role="none" onclick="logear()" class="waves-effect waves-light btn btn-iniciosesion" class="center-align"><i class="material-icons left"></i>Iniciar Sesión con Facebook</button>
+
+      </div>
+    </div>
+    <!--TERMINA PANTALLA LOGIN-->
+
+
+    <!--PANTALLA SELECCIONAR PELICULAS-->
+    <div data-role="page" id="peliculas-page" data-enhance="false">
+      <div data-role="main">
+        <div class="carousel peliculas"  data-role="none">
+          <a class="carousel-item" href="#one!"><img src="./img/index.jpeg"></a>
+          <a class="carousel-item" href="#two!"><img src="./img/1.jpeg"></a>
+          <a class="carousel-item" href="#three!"><img src="./img/3.jpeg"></a>
+          <a class="carousel-item" href="#four!"><img src="./img/m2.jpeg"></a>
+          <a class="carousel-item" href="#five!"><img src="./img/4.jpeg"></a>
+        </div> 
+
+
+        <!-- Modal Trigger -->
+        <a id="btn-peliculas" class="waves-effect waves-light btn modal-trigger boton-termine" align="center" href="#modal1">Ya Termine</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <p>Debe seleccionar al menos una pelicula.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--TERMINA PANTALLA SELECCIONAR PELICULA-->
+
+    <!--PANTALLA COMBO-->
+    <div data-role="page" id="combo-page" data-enhance="false">
+      <div data-role="header" data-id="nav-header">
+        <nav>
+          <div class="nav-wrapper">
+            <ul id="nav-mobile">
+              <li><a href="#ajustes-page"></a><i class="fa fa-commenting fa-3x"></i></li>
+              <li><a href="combo.html"></a><img src="img/pochocloblanco.png"></li>
+              <li><a href="admperfil.html"></a><i class="fa fa-user fa-3x"></i></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div data-role="main">
+        
+        <div id="tinderslide">
+            <ul>
+                <li class="pane1">
+                   <div class="img">
+                   </div>
+                     <span class="nombre">Miqueas,25</span>
+                     <div class="descripcion">
+                      <p>Holis.</p>
+                     </div>
+                   
+                   <div class="dislike"></div>
+                   <div class="like"></div>                 
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+          
+          <div class="col s6">
+            <a href="#" class="btn-floating btn-large waves-effect waves-light dislike "><i class="fa fa-times fa-5x"></i></a>
+          </div>
+
+
+          <div class="col s6">
+            <a  href="#" class="btn-floating btn-large waves-effect waves-light like "><img src="img/pochocloblanco.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--TERMINA PANTALLA COMBO-->
+
+    <!--PANTALLA ADMPERFIL-->
+      <!--Barra de navegacion-->
+
+        <nav>
+          <div class="nav-wrapper">
+            <ul id="nav-mobile">
+              <li><a href="chat.html"></a><i class="fa fa-commenting fa-3x"></i></li>
+              <li><a href="combo.html"></a><img src="img/pochocloblanco.png"></li>
+              <li><a href="admperfil.html"></a><i class="fa fa-user fa-3x"></i></li>
+            </ul>
+          </div>
+        </nav>
+
+      <!--boton ajustes-->
+
+       <div>
+          <i class="fa fa-cog logo-2" aria-hidden="true">Ajustes</i>
+       </div>        
+
+      <!--boton Seleccionar Peliculas-->
+      <div>
+        <i class="fa fa-film logo-2" aria-hidden="true">Seleccionar Peliculas</i>
+      </div>
+          
+
+    <!--TERMINA PANTALLA ADMPERFIL-->
+
+    <!--PANTALLA AJUSTES-->
+    <div data-role="page" id="ajustes-page" data-enhance="false">
+      <div data-role="main">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#"><i class="fa fa-arrow-left fa-2x" aria-hidden="true" style="color:white" ></i></a>
+                <h4>Ajustes</h4>
+            </div>  
+           
+        </nav>
+
+        <!--switch-->
+        <div class="col-3">
+            <h6>Muestrame</h6>
+            
+            <div class="switch">
+                <label>
+                  Hombres
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  
+                </label>
+            </div>
+
+            
+            <div class="switch">
+                <label>
+                  Mujeres
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  
+                </label>
+            </div>
+        </div>
+
+        <!--rango-->
+        <div class="col-3">
+            <h6>Rango de busqueda</h6>
+
+            <form action="#">
+                <p class="range-field">
+                  <input type="range" id="test5" min="0" max="100" />
+                </p>
+            </form>
+        
+        </div>
+ 
+        <!--rango noUiSlider-->
+        <div class="col-3">
+            <h6>Mostrar edades</h6>
+
+            <form action="#" >
+                <p class="range-field">
+                  <input type="range" id="rangoedad" min="18" max="100" />
+                </p>
+            </form>
+        
+        </div>
+      </div>
+    </div>
+    <!--TERMINA PANTALLA AJUSTES-->
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+
+  <script type="text/javascript">
+    $.mobile.loading().hide();
+  </script>
+     <!-- JTINDER -->
+
+    <!-- transform2d lib -->
+    <script type="text/javascript" src="js/jquery.transform2d.js"></script>
+
+    <!-- jTinder lib -->
+    <script type="text/javascript" src="js/jquery.jTinder.js"></script>
+
+    <!-- jTinder initialization script -->
+    <script>$("#tinderslide").jTinder();</script>
+
+    <!--noUiSlider-->
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/nouislider.js"></script>
+    <script src="js/nouisliderrange.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.0.4/wNumb.min.js'></script>
+</html>
+
+

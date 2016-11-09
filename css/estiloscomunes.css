@@ -1,0 +1,210 @@
+/*BOTONES*/
+
+.btn{
+	background-color:#b71c1c ;
+}
+
+.btn:hover{
+	background-color: #c62828;
+}
+
+/*BARRA DE NAVEGACION*/
+nav{
+	
+	background-color: #b71c1c;
+	width: 100%;
+	height: 75px;
+}
+
+nav ul li {
+	padding: 5% 10% 5% 10%;
+
+}
+
+li{
+	width: 33.33%;
+}
+
+li a img{
+	width:20%;
+}
+
+
+/*LOGIN*/
+
+#login-page {
+    background-image: url("../img/fondologin.jpg");
+}
+
+h3{
+	color:white;
+
+}
+
+
+.logo{
+	width: 100%;
+	margin-bottom: 80%;
+	margin-top: 20%;
+}
+
+
+.btn-iniciosesion{
+	background-color:#b71c1c ;
+	margin: 0% 10% 0 10%;
+	font-size: 75%;
+
+}
+
+/*SELECCIONAR PELICULAS*/
+
+.boton-termine{
+	width:50%;
+	margin: 25% 10% 0% 25%;
+}
+
+/*COMBO*/
+
+#tinderslide{
+	position: relative;
+    background: #fff;
+	width: 90%;
+	height: 400px;
+	margin: 5%;
+}
+
+#tinderslide li {
+	background: #fff;
+	}
+
+.img-perfil{
+	height: 80%;
+}
+
+.perfil{
+	width: 90%;
+	height:70%;
+}
+
+.nombre{
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    padding: 20px;
+}
+
+.descripcion{
+    border-radius: 0 0 2px 2px;
+    max-height: 70px;
+    display: -webkit-box;
+}
+
+p{
+	font-size: medium;
+}
+
+.btn-floating.btn-large {
+	background-color:#b71c1c;
+	margin:0% 30%; 
+}
+
+.btn-floating.btn-large {
+    width: 90px;
+    height: 90px;
+    margin: 0% 10% 0% 25%;
+}
+
+
+.btn-large i {
+    font-size: 4rem;
+}
+
+.btn-floating.btn-large i {
+    line-height: 80px;
+}
+
+.boton-pochoclo{
+	width: 70%;
+	padding: 20% 5% 0% 5%;
+}
+
+/*ADM PERFFIL*/
+
+.logo-2{
+	margin-left:5%;
+	margin-bottom: 4%;
+}
+
+.edit{
+	margin-left: 5%;
+}
+
+.boton-editar{
+	bottom: 25px;
+	margin-left: 80%;
+	
+	position: absolute;
+}
+
+.blanco{
+	color: #fff;
+}
+
+.rojo{
+	color: #b71c1c;
+}
+
+/*AJUSTES*/
+
+h6{
+	margin-left: 5%;
+	margin-top: 10%;
+}
+
+
+form{
+	width: 80%;
+    margin: 10% 0% 10% 10%;
+}
+
+.switch{
+	margin: 10% 25%;
+   
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #c62828;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #c62828;
+  }
+
+input[type=range]+.thumb {
+	border-color:  #c62828;
+}
+
+input[type=range]+.thumb {
+	background-color:#c62828;
+}
+
+h4{
+	
+    display: -webkit-inline-box;
+    padding-left: 5%;
+}
+
+
+nav .nav-wrapper{
+	padding: 0% 5%;
+
+}
+
+
+.col-3{
+	width: 100%;
+	height: 25%;
+}
