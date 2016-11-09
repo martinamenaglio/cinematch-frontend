@@ -1,8 +1,25 @@
+<<<<<<< HEAD
 .boton-termine{
+=======
+#btn-peliculas{
+>>>>>>> 976b91101af6d8183434c691addaff6ae842ea88
 	width:50%;
-	margin: 25% 10% 0% 25%;
+	margin: 25% 10% 0% 25% !important;
+	color: white;
 }
 
 .btn:hover{
 	background-color: #c62828;
+}
+
+#peliculas-page{
+	background-color: transparent;
+}
+
+.carousel {
+
+    -webkit-perspective: 500px !important;
+
+    -webkit-transform-style: preserve-3d !important;
+    -webkit-transform-origin: 0% 50% !important;
 }

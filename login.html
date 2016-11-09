@@ -52,12 +52,16 @@
 </style>
   </head>
   <body>
+<<<<<<< HEAD
 
     <!--PANTALLA LOGIN-->
+=======
+>>>>>>> 976b91101af6d8183434c691addaff6ae842ea88
     <div data-role="page" id="login-page" data-enhance="false">
       <div data-role="main"  class="ui-content #d32f2f">
         <img src="./img/logo3.png" class="center-align logo">
 
+<<<<<<< HEAD
         <button data-role="none" onclick="logear()" class="waves-effect waves-light btn btn-iniciosesion" class="center-align"><i class="material-icons left"></i>Iniciar Sesión con Facebook</button>
 
       </div>
@@ -68,13 +72,43 @@
     <!--PANTALLA SELECCIONAR PELICULAS-->
     <div data-role="page" id="peliculas-page" data-enhance="false">
       <div data-role="main">
-        <div class="carousel peliculas"  data-role="none">
-          <a class="carousel-item" href="#one!"><img src="./img/index.jpeg"></a>
-          <a class="carousel-item" href="#two!"><img src="./img/1.jpeg"></a>
-          <a class="carousel-item" href="#three!"><img src="./img/3.jpeg"></a>
-          <a class="carousel-item" href="#four!"><img src="./img/m2.jpeg"></a>
-          <a class="carousel-item" href="#five!"><img src="./img/4.jpeg"></a>
-        </div> 
+        <div class="carousel peliculas">
+              <a class="carousel-item" href="#one!">
+                <img src="./img/index.jpeg">
+                <p class="tilde">
+                    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                    <label for="filled-in-box"></label>
+                </p>
+              </a>
+              <a class="carousel-item" href="#two!">
+                <img src="./img/1.jpeg">
+                <p class="tilde">
+                    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                    <label for="filled-in-box"></label>
+                </p>
+              </a>
+              <a class="carousel-item" href="#three!">
+                <img src="./img/3.jpeg">
+                <p class="tilde">
+                    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                    <label for="filled-in-box"></label>
+                </p>
+              </a>
+              <a class="carousel-item" href="#four!">
+                <img src="./img/m2.jpeg">
+                <p class="tilde">
+                    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                    <label for="filled-in-box"></label>
+                </p>
+              </a>
+              <a class="carousel-item" href="#five!">
+                <img src="./img/4.jpeg">
+                <p class="tilde">
+                    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                    <label for="filled-in-box"></label>
+                </p>
+              </a>
+          </div> 
 
 
         <!-- Modal Trigger -->
@@ -163,6 +197,152 @@
         <i class="fa fa-film logo-2" aria-hidden="true">Seleccionar Peliculas</i>
       </div>
           
+=======
+        <button data-role="none" onclick="logear()" " class="waves-effect waves-light btn" class="center-align"><i class="material-icons left"></i>Iniciar Sesión con Facebook</button>
+
+      </div>
+    </div>
+
+    <div data-role="page" id="peliculas-page" data-enhance="false">
+      <div data-role="main">
+        <div class="carousel peliculas"  data-role="none">
+          <a class="carousel-item" href="#one!"><img src="./img/index.jpeg"></a>
+          <a class="carousel-item" href="#two!"><img src="./img/1.jpeg"></a>
+          <a class="carousel-item" href="#three!"><img src="./img/3.jpeg"></a>
+          <a class="carousel-item" href="#four!"><img src="./img/m2.jpeg"></a>
+          <a class="carousel-item" href="#five!"><img src="./img/4.jpeg"></a>
+        </div> 
+
+
+        <!-- Modal Trigger -->
+        <a id="btn-peliculas" class="waves-effect waves-light btn modal-trigger" align="center" href="#modal1">Ya Termine</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <p>Debe seleccionar al menos una pelicula.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-role="page" id="combo-page" data-enhance="false">
+      <div data-role="header" data-id="nav-header">
+        <nav>
+          <div class="nav-wrapper">
+            <ul id="nav-mobile">
+              <li><a href="#ajustes-page"></a><i class="fa fa-commenting fa-3x"></i></li>
+              <li><a href="combo.html"></a><img src="img/pochocloblanco.png"></li>
+              <li><a href="admperfil.html"></a><i class="fa fa-user fa-3x"></i></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div data-role="main">
+        <div id="tinderslide">
+            <ul>
+                <li>
+                   <div>
+                     <img class="perfil img" src="img/fotoperfil.jpg">
+                     <span class="nombre">Miqueas,25</span>
+                     <div class="descripcion">
+                      <p>lalalalalallalalallalalalalal</p>
+                     </div>
+                   </div>                 
+                </li>
+
+                <li>
+                  <div>
+                     <img class="perfil img" src="img/fotoperfil.jpg">
+                     <span class="nombre">Miqueas,25</span>
+                     <div class="descripcion">
+                      <p>lalalalalallalalallalalalalal</p>
+                     </div>
+                     
+                   </div>
+                  
+                </li>
+                
+            </ul>
+        </div>
+
+        
+         <!--botones-->
+        <div class="row">
+          <!--boton pochoclo-->
+          <div class="col s6">
+            <a class="btn-floating btn-large waves-effect waves-light "><img src="img/pochocloblanco.png"></a>
+          </div>
+          
+          <!--boton cruz-->
+          <div class="col s6">
+            <a class="btn-floating btn-large waves-effect waves-light "><i class="fa fa-times fa-5x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-role="page" id="ajustes-page" data-enhance="false">
+      <div data-role="main">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#"><i class="fa fa-arrow-left fa-2x" aria-hidden="true" style="color:white" ></i></a>
+                <h4>Ajustes</h4>
+            </div>  
+           
+        </nav>
+
+        <!--switch-->
+        <div class="col-3">
+            <h6>Muestrame</h6>
+            
+            <div class="switch">
+                <label>
+                  Hombres
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  
+                </label>
+            </div>
+
+            
+            <div class="switch">
+                <label>
+                  Mujeres
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  
+                </label>
+            </div>
+        </div>
+
+        <!--rango-->
+        <div class="col-3">
+            <h6>Rango de busqueda</h6>
+
+            <form action="#">
+                <p class="range-field">
+                  <input type="range" id="test5" min="0" max="100" />
+                </p>
+            </form>
+        
+        </div>
+ 
+        <!--rango noUiSlider-->
+        <div class="col-3">
+            <h6>Mostrar edades</h6>
+
+            <form action="#" >
+                <p class="range-field">
+                  <input type="range" id="rangoedad" min="18" max="100" />
+                </p>
+            </form>
+        
+        </div>
+      </div>
+    </div>
+>>>>>>> 976b91101af6d8183434c691addaff6ae842ea88
 
     <!--TERMINA PANTALLA ADMPERFIL-->
 
@@ -248,7 +428,10 @@
     <script src="js/nouislider.min.js"></script>
     <script src="js/nouislider.js"></script>
     <script src="js/nouisliderrange.js"></script>
+<<<<<<< HEAD
     <script src='https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.0.4/wNumb.min.js'></script>
+=======
+>>>>>>> 976b91101af6d8183434c691addaff6ae842ea88
 </html>
 
 
